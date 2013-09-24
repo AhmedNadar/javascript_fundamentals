@@ -8,6 +8,13 @@
 // takes 4 arguments: number of children, partner's name, geographic location, job title.
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
+function tellFortune(myJob, location, parent, kids){
+		var result = "You will be a " + myJob + " in " + location + ", and married to " + parent + " with " + kids + " kids" ;
+		console.log(result);
+}
+tellFortune("Walli", "Mars", "Eva", 0);
+tellFortune("guy", "Here", "her", 1);
+tellFortune("Developer", "Toronto", "my wife", 2);
 
 // EXERCISE: The Age Calculator
 
@@ -19,6 +26,14 @@
 // outputs the result to the screen like so: "You are either NN or NN"
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
+function calculateAge(birthYear, currentYear){
+var age = currentYear - birthYear;
+var result = "You are either " + age + " or " + (age - 1);
+console.log(result);
+}
+calculateAge(1989,new Date().getFullYear());
+calculateAge(1893, new Date().getFullYear());
+calculateAge(1953, new Date().getFullYear());
 
 // EXERCISE: The Lifetime Supply Calculator
 
@@ -30,8 +45,19 @@
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+function calculateSupply(age, amount){
+var maxAge = 200;
+var total = (Math.round(amount * 365)) * (maxAge - age);
+var result = "You will need " +total+ " to last you until the ripe old age of " + maxAge;
+console.log(result);
+}
 
-// EXERCISE: The Geometrizer
+calculateSupply(20, 4);
+calculateSupply(30, 2);
+calculateSupply(16, 9);
+
+
+// EXERCISE: The Geometrzer
 
 // Create 2 functions that calculate properties of a circle, using the definitions here.
 
@@ -43,6 +69,19 @@
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+function calcCircumfrence(rad){
+    c_calcCircumfrence= Math.PI * rad * 2;
+    return "The circumference is " + c_calcCircumfrence + ".";
+    }
+    
+function calArea(rad){
+    cal_area= Math.PI * Math.pow(rad, 2);
+    return "The area is " + cal_area + ".";
+    }
+    
+    calcCircumfrence(4);
+    calArea(8);
+
 
 // EXERCISE: The Temperature Converter
 
@@ -56,4 +95,18 @@
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+function celsiusToFahrenheit(){
+    var celsius = 20;
+    var fahrenheit =  celsius * 9 / 5 + 32;
+    var fresult = celsius +"˚C is " + fahrenheit + " ˚F";
+    console.log(fresult);   
+}
+celsiusToFahrenheit();
 
+function fahrenheitToCelsius(){
+    var fahrenheit = 70;
+    var celsius = fahrenheit - 32 * 5 / 9;
+    var cresult = fahrenheit + "˚F is " + celsius + "˚C";
+    console.log(cresult);
+}
+fahrenheitToCelsius();
