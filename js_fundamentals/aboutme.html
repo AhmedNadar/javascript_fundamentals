@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me</title>
+	</head>
+<body>
+	<h1>About Me</h1>
+		<ul>
+			<li>Nickname: <span id="nickname"></span>
+			<li>Favorites:  <span id="favorites"></span>
+			<li>Hometown: <span id="hometown"></span>
+		</ul>
+	<script type="text/javascipt">
+		document.body.style.font-family = "Arial, san-serif";
+		document.getElementById("nickname").innerHTML = "Ahmed";
+		document.getElementById("favorites").innerHTML= "helping others, reading, design, football";
+		document.getElementById("hometown").innerHTML= "Toronto";
+
+		var myImage = document.createElement('img');
+		myImage.src = "https://si0.twimg.com/profile_images/378800000507960698/241b5d89b7cb9b312d7ee9298ca9d649_bigger.jpeg";
+		document.body.appendChild(myImage);
+	</script>
+	</body>
+</html>

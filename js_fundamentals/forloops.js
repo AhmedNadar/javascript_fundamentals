@@ -22,7 +22,7 @@ while (count < 20){
 // Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 for(count = 0; count < 11; count++){
        var num = count * 9;
-       console.log(count + "* 9" + num);      
+       console.log(count + "* 9" + num);  
 }
 
 
@@ -42,11 +42,11 @@ function assignGrade(score){
  }else if (score > 50){
      return "E";
  }else {
-    return "F"   
+    return "F";
  }
 }
 
 for (var i = 60; i <= 100; i++){
-    console.log("For " + i + ", you got a "+ assignGrade(i))
+    console.log("For " + i + ", you got a "+ assignGrade(i));
 }
 

@@ -52,9 +52,9 @@ var result = "You will need " +total+ " to last you until the ripe old age of " 
 console.log(result);
 }
 
-calculateSupply(20, 4);
-calculateSupply(30, 2);
-calculateSupply(16, 9);
+calculateSupply(20, 4.3);
+calculateSupply(30, 2.0);
+calculateSupply(16, 9.5);
 
 
 // EXERCISE: The Geometrzer
