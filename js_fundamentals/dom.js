@@ -10,6 +10,12 @@
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
 
+var logo = document.getElementById('hplogo').style.backgroundImage='url("http://blog.limetreeonline.com/wp-content/uploads/2013/09/yahoo-logo.jpg")';
+document.getElementById('hplogo').style.backgroundImage='url("http://blog.limetreeonline.com/wp-content/uploads/2013/09/yahoo-logo.jpg")';
+
+
+var search = document.getElementById('gbqfsa').innerHTML="yahoooo!";
+
 // EXERCISE: About Me
 
 // Cuz every webpage needs an "About" section.
@@ -38,6 +44,8 @@
 // Replace each of the spans (nickname, favorites, hometown) with your own information.
 // Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 // Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+
 
 // EXERCISE: The Book List
 
